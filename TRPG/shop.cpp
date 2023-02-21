@@ -32,15 +32,15 @@ int ShopMain()
 	// Æ÷¼Ç
 	int HPpotion = 50, MPpotion = 30, GHPpotion = 75, GMPpotion = 45, antidote, bandage ;
 
-	shop armor[5] = { {"Shield : ",ShieldPrice, Gold},{"Armor : ",ArmorPrice, Gold},{"helmet : ",helmetPrice, Gold},
+	const shop armor[5] = { {"Shield : ",ShieldPrice, Gold},{"Armor : ",ArmorPrice, Gold},{"helmet : ",helmetPrice, Gold},
 					  {"boots : ",bootsPrice, Gold}, {"robe : ",RobePrice, Gold} };
 
-	shop wepon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},{"Axe : ", AxePrice, Gold},{"LongSword : ", LongSwordPrice, Gold},{"Sword : ", SwordPrice, Gold},
+	const shop wepon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},{"Axe : ", AxePrice, Gold},{"LongSword : ", LongSwordPrice, Gold},{"Sword : ", SwordPrice, Gold},
 					  {"Spear : ", SpearPrice ,Gold},{"clip : ", clipPrice, Gold},{"Degar : ", DegarPrice, Gold},{"MroningStar : ", MroningStarPrice, Gold} };
 
-	shop rangeWeapon[3] = { {"Bow : ",BowPrice, Gold}, {"ThrowKnife : ", ThrowKnifePrice , Gold} };
+	const shop rangeWeapon[3] = { {"Bow : ",BowPrice, Gold}, {"ThrowKnife : ", ThrowKnifePrice , Gold} };
 
-	shop expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},{"ManaPotion : ", MP_PotionPrice, Gold},
+	const shop expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},{"ManaPotion : ", MP_PotionPrice, Gold},
 							{"GreateHealingPotion : ", GHP_PotionPrice, Gold},{"GreateManaPotion : ", GMP_PotionPrice, Gold},
 							{"antidote : ",antidotePrice, Gold},{"bandage : ", bandagePrice, Gold} };
 
@@ -63,7 +63,7 @@ int ShopMain()
 			}
 			
 		}
-		if (equipmentChoice == 1)
+		if (equipmentChoice == 2)
 		{
 			for (int i = 0; i < WeaponSize; i++)
 			{
@@ -71,7 +71,7 @@ int ShopMain()
 			}
 			 
 		}
-		if (equipmentChoice == 1)
+		if (equipmentChoice == 3)
 		{
 			for (int i = 0; i < RangeWeaponSize; i++)
 			{
@@ -79,7 +79,7 @@ int ShopMain()
 			}
 
 		}
-		if (equipmentChoice == 1)
+		if (equipmentChoice == 4)
 		{
 			for (int i = 0; i < ExpendablesSize; i++)
 			{
