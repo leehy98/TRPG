@@ -1,31 +1,31 @@
 #include "Monster.h"
 
-static int MonsterStats()
+ int MonsterStats()
 {
 	int monsterHP = 10, monsterAD = 10, monsterDEF = 10;
 	return 0;
 }
-static void slime(int* _slimeHP, int* _slimeAD, int* _slimeDEF)
+ void slime(int* slimeHP, int* slimeAD, int* slimeDEF)
 {
-	*_slimeHP = 100;
-	*_slimeAD = 10;
-	*_slimeDEF = 3;
+	*slimeHP = 100;
+	*slimeAD = 10;
+	*slimeDEF = 3;
 }
-static void goblin(int* _goblinHP, int* _goblinAD, int* _goblinDEF)
+ void goblin(int* goblinHP, int* goblinAD, int* goblinDEF)
 {
-	*_goblinHP = 150;
-	*_goblinAD = 25;
-	*_goblinDEF = 5;
+	*goblinHP = 150;
+	*goblinAD = 25;
+	*goblinDEF = 5;
 }
-static void lizardMan(int* _lizardManHP, int* _lizardManAD, int* _lizardManDEF)
+ void lizardMan(int* lizardManHP, int* lizardManAD, int* lizardManDEF)
 {
-	*_lizardManHP = 270;
-	*_lizardManAD = 35;
-	*_lizardManDEF = 15;
+	*lizardManHP = 270;
+	*lizardManAD = 35;
+	*lizardManDEF = 15;
 }
-static void testmonster(int* _testmonsterHP, int* _testmonsterAD, int* _testmonsterDEF)
+ void testmonster(int* testmonsterHP, int* testmonsterAD, int* testmonsterDEF)
 {
-	*_testmonsterHP = 270;
-	*_testmonsterAD = 35;
-	*_testmonsterDEF = 15;
+	*testmonsterHP = 99999;
+	*testmonsterAD = 1;
+	*testmonsterDEF = 99;
 }

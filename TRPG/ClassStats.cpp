@@ -1,34 +1,34 @@
 #include"ClassStats.h"
 
-void warrior(double* _warriorHP, double* _warriorMP, double* _warriorAD, double* _warriorAP, double* _warriorDEF)
+void warrior(double* warriorHP, double* warriorMP, double* warriorAD, double* warriorAP, double* warriorDEF)
 {
-	*_warriorHP = 250;
-	*_warriorMP = 50;
-	*_warriorAD = 40;
-	*_warriorAP = 15;
-	*_warriorDEF = 30;
+	*warriorHP = 250;
+	*warriorMP = 50;
+	*warriorAD = 40;
+	*warriorAP = 15;
+	*warriorDEF = 30;
 }
-void wizard(double* _WizardHP, double* _WizardMP, double* _WizardAD, double* _WizardAP, double* _WizardDEF)
+void wizard(double* WizardHP, double* WizardMP, double* WizardAD, double* WizardAP, double* WizardDEF)
 {
-	*_WizardHP = 150;
-	*_WizardMP = 250;
-	*_WizardAD = 15;
-	*_WizardAP = 100;
-	*_WizardDEF = 15;
+	*WizardHP = 150;
+	*WizardMP = 250;
+	*WizardAD = 15;
+	*WizardAP = 100;
+	*WizardDEF = 15;
 }
-void prist(double* _pristHP, double* _pristMP, double* _pristAD, double* _pristAP, double* _pristDEF)
+void prist(double* pristHP, double* pristMP, double* pristAD, double* pristAP, double* pristDEF)
 {
-	*_pristHP = 175,
-		* _pristMP = 150,
-		* _pristAD = 25,
-		* _pristAP = 50,
-		* _pristDEF = 20;
+	*pristHP = 175,
+		* pristMP = 150,
+		* pristAD = 25,
+		* pristAP = 50,
+		* pristDEF = 20;
 }
-void vagabond(double* _vagabondHP, double* _vagabondMP, double* _vagabondAD, double* _vagabondAP, double* _vagabondDEF)
+void vagabond(double* vagabondHP, double* vagabondMP, double* vagabondAD, double* vagabondAP, double* vagabondDEF)
 {
-	*_vagabondHP = 155;
-	*_vagabondMP = 130;
-	*_vagabondAD = 50;
-	*_vagabondAP = 35;
-	*_vagabondDEF = 25;
+	*vagabondHP = 155;
+	*vagabondMP = 130;
+	*vagabondAD = 50;
+	*vagabondAP = 35;
+	*vagabondDEF = 25;
 }

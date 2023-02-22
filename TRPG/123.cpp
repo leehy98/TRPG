@@ -2,6 +2,7 @@
 #include "Monster.h"
 #include "Player.h"
 
+double PlayerStats();
 void warrior();
 void wizard();
 void prist();
@@ -11,4 +12,6 @@ void slime();
 void goblin();
 void lizardMan();
 
-double PlayerStats();
+void wizard()
+{
+}

@@ -35,21 +35,21 @@ int ShopMain()
 	const shop armor[5] = { {"Shield : ",ShieldPrice, Gold},{"Armor : ",ArmorPrice, Gold},{"helmet : ",helmetPrice, Gold},
 					  {"boots : ",bootsPrice, Gold}, {"robe : ",RobePrice, Gold} };
 
-	const shop wepon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},{"Axe : ", AxePrice, Gold},{"LongSword : ", LongSwordPrice, Gold},{"Sword : ", SwordPrice, Gold},
+	const shop Weapon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},{"Axe : ", AxePrice, Gold},{"LongSword : ", LongSwordPrice, Gold},{"Sword : ", SwordPrice, Gold},
 					  {"Spear : ", SpearPrice ,Gold},{"clip : ", clipPrice, Gold},{"Degar : ", DegarPrice, Gold},{"MroningStar : ", MroningStarPrice, Gold} };
 
-	const shop rangeWeapon[3] = { {"Bow : ",BowPrice, Gold}, {"ThrowKnife : ", ThrowKnifePrice , Gold} };
+	const shop RangeWeapon[3] = { {"Bow : ",BowPrice, Gold}, {"ThrowKnife : ", ThrowKnifePrice , Gold} };
 
-	const shop expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},{"ManaPotion : ", MP_PotionPrice, Gold},
+	const shop Expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},{"ManaPotion : ", MP_PotionPrice, Gold},
 							{"GreateHealingPotion : ", GHP_PotionPrice, Gold},{"GreateManaPotion : ", GMP_PotionPrice, Gold},
 							{"antidote : ",antidotePrice, Gold},{"bandage : ", bandagePrice, Gold} };
 
 
 	int ArmorSize = (sizeof(armor) / sizeof(*armor));
-	int WeaponSize = (sizeof(wepon) / sizeof(*wepon));
-	int RangeWeaponSize = (sizeof(rangeWeapon) / sizeof(*rangeWeapon));
-	int ExpendablesSize = (sizeof(expendables) / sizeof(*expendables));
-
+	int WeaponSize = (sizeof(Weapon) / sizeof(*Weapon));
+	int RangeWeaponSize = (sizeof(RangeWeapon) / sizeof(*RangeWeapon));
+	int ExpendablesSize = (sizeof(Expendables) / sizeof(*Expendables));
+	
 	int equipmentChoice = 0;
 	if(MenuChoice == 2)
 	{
@@ -59,7 +59,10 @@ int ShopMain()
 		{
 			for(int i = 0 ; i < ArmorSize; i++)
 			{
-				
+				for (auto const& value : armor)
+					cout << "what armor do you buy" << endl;
+					cout << i << " : " << armor << endl;
+					cout << endl;
 			}
 			
 		}
@@ -67,7 +70,10 @@ int ShopMain()
 		{
 			for (int i = 0; i < WeaponSize; i++)
 			{
-
+				for (auto const& value : Weapon)
+					cout << "what weapon do you buy" << endl;
+				    cout << i << " : " << Weapon << endl;
+					cout << endl;
 			}
 			 
 		}
@@ -75,7 +81,10 @@ int ShopMain()
 		{
 			for (int i = 0; i < RangeWeaponSize; i++)
 			{
-
+				for (auto const& value : RangeWeapon)
+					cout << "what range weapon do you buy" << endl;
+					cout << i << " : " << RangeWeapon << endl;
+					cout << endl;
 			}
 
 		}
@@ -83,7 +92,10 @@ int ShopMain()
 		{
 			for (int i = 0; i < ExpendablesSize; i++)
 			{
-
+				for (auto const& value : Expendables)
+					cout << "what Expendables do you buy" << endl;
+					cout << i << " : " << Expendables << endl;
+					cout << endl;
 			}
 
 		}

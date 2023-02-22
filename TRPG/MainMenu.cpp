@@ -6,7 +6,7 @@ int mainPage()
 {
 	int MenuChoice = 0;
 
-	cout << "Select your choose." << endl;
+	cout << "what action would you take." << endl;
 	cout << "1.fighting monsters." << endl;
 	cout << "2.ItemShop" << endl;
 	cin >> MenuChoice; 

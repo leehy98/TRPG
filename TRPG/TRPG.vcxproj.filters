@@ -22,6 +22,9 @@
     <Filter Include="헤더 파일\Monster">
       <UniqueIdentifier>{5cb2e28a-c659-414f-b417-ba537edd06ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Skill">
+      <UniqueIdentifier>{f14b4618-3f25-4731-9a8e-1fa264032300}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="inven.cpp">
@@ -51,6 +54,9 @@
     <ClCompile Include="123.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>헤더 파일\Skill</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Monster.h">
       <Filter>헤더 파일\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>헤더 파일\Skill</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
