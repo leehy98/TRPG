@@ -18,18 +18,18 @@ int ShopMain()
 	
 	int HP_PotionPrice = 50, MP_PotionPrice = 50, GHP_PotionPrice = 150, GMP_PotionPrice = 150, antidotePrice = 150, bandagePrice = 150;
 	
-	//¹æ¾î±¸
+	//ë°©ì–´êµ¬
 	int Shield = 10, Armor = 15, helmet = 10, boots = 5, Robe = 8;
 
-	// ±ÙÁ¢ ¹«±â 
-	//Axe³¢°í °ø°İ½Ã ÀÏÁ¤ È®·ü·Î °¡µå ºê·¹ÀÌÅ©, GreateAxe´Â ´õ Å« È®·ü·Î °¡µå ºê·¹ÀÌÅ©
-	//Sword ÇÃ·¹ÀÌ¾î°¡ attack ÇÒ½Ã ÀÏÁ¤ È®·ü·Î »ó´ëÀÇ °ø°İÀ» ¹æ¾î, LongSword´Â ´õ Å« È®·ü·Î ¹æ¾î 
+	// ê·¼ì ‘ ë¬´ê¸° 
+	//Axeë¼ê³  ê³µê²©ì‹œ ì¼ì • í™•ë¥ ë¡œ ê°€ë“œ ë¸Œë ˆì´í¬, GreateAxeëŠ” ë” í° í™•ë¥ ë¡œ ê°€ë“œ ë¸Œë ˆì´í¬
+	//Sword í”Œë ˆì´ì–´ê°€ attack í• ì‹œ ì¼ì • í™•ë¥ ë¡œ ìƒëŒ€ì˜ ê³µê²©ì„ ë°©ì–´, LongSwordëŠ” ë” í° í™•ë¥ ë¡œ ë°©ì–´ 
 	int GreateAxe = 20, Axe = 10, LongSword = 14, Sword = 7, Spear = 13, clip = 9, Degar = 5, MroningStar = 8;
 	
-	// ¿ø°Å¸® ¹«±â
+	// ì›ê±°ë¦¬ ë¬´ê¸°
 	int Bow = 50, ThrowKnife = 20;
 	
-	// Æ÷¼Ç
+	// í¬ì…˜
 	int HPpotion = 50, MPpotion = 30, GHPpotion = 75, GMPpotion = 45, antidote, bandage ;
 
 	const shop armor[5] = { {"Shield : ",ShieldPrice, Gold},{"Armor : ",ArmorPrice, Gold},{"helmet : ",helmetPrice, Gold},
@@ -53,7 +53,7 @@ int ShopMain()
 	int equipmentChoice = 0;
 	if(MenuChoice == 2)
 	{
-		cout << "Welcome to the shop.Decide what type of equipment to look at";
+		cout << "Welcome to the shop.Decide what type of equipment to look at" << endl;
 		cin >> equipmentChoice;
 		if (equipmentChoice == 1)
 		{
@@ -61,7 +61,7 @@ int ShopMain()
 			{
 				for (auto const& value : armor)
 					cout << "what armor do you buy" << endl;
-					cout << i << " : " << armor << endl;
+					cout << i << " : " << armor[i] << endl;
 					cout << endl;
 			}
 			
@@ -72,7 +72,7 @@ int ShopMain()
 			{
 				for (auto const& value : Weapon)
 					cout << "what weapon do you buy" << endl;
-				    cout << i << " : " << Weapon << endl;
+				    cout << i << " : " << Weapon[i] << endl;
 					cout << endl;
 			}
 			 
@@ -83,7 +83,7 @@ int ShopMain()
 			{
 				for (auto const& value : RangeWeapon)
 					cout << "what range weapon do you buy" << endl;
-					cout << i << " : " << RangeWeapon << endl;
+					cout << i << " : " << RangeWeapon[i] << endl;
 					cout << endl;
 			}
 
@@ -94,7 +94,7 @@ int ShopMain()
 			{
 				for (auto const& value : Expendables)
 					cout << "what Expendables do you buy" << endl;
-					cout << i << " : " << Expendables << endl;
+					cout << i << " : " << Expendables[i] << endl;
 					cout << endl;
 			}
 
