@@ -1,14 +1,17 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-struct inven 
+struct inven
 {
 	string iName;
-	int iStats;
+	
 };
-int invenMain ()
-{
-	inven inven[100]{};
 
+int invenMain()
+{
+	const int invenSize = 10;
+	vector<inven> inventory(invenSize);
+	return 0;
 }

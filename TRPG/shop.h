@@ -1,0 +1,51 @@
+#pragma once
+#include <string>
+using namespace std;
+struct shop{};
+
+class SHOP
+{
+	int ShopMain()
+	{
+		string Gold;
+		int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
+
+		int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
+
+		int BowPrice, ThrowKnifePrice;
+
+		int HP_PotionPrice, MP_PotionPrice, GHP_PotionPrice, GMP_PotionPrice, antidotePrice, bandagePrice;
+
+		int Shield, Armor, helmet, boots, Robe;
+
+		int GreateAxe, Axe, LongSword, Sword, Spear, clip, Degar, MroningStar;
+
+		int Bow, ThrowKnife;
+
+		int HP_Potion, MP_Potion, GHP_Potion, GMP_Potion, antidote, bandage;
+
+		shop armor[5];
+
+		shop Weapon[8];
+
+		shop RangeWeapon[3];
+
+		shop Expendables[6];
+
+
+		int ArmorSize;
+		int WeaponSize;
+		int RangeWeaponSize;
+		int ExpendablesSize;
+		int equipmentChoice;
+	}
+};
+
+class Buy_Item
+{
+
+};
+class SEll_Item
+{
+
+};

@@ -1,14 +1,21 @@
+
 #include <iostream>
 #include <string>
+#include "MainMenu.h"
 using namespace std;
 
-int mainPage()
+class gameStart  
 {
-	int MenuChoice = 0;
+	int mainPage(int MenuChoice)
+	{
+		int MenuChoice = 0;
 
-	cout << "what action would you take." << endl;
-	cout << "1.fighting monsters." << endl;
-	cout << "2.ItemShop" << endl;
-	cin >> MenuChoice; 
+		cout << "what action would you take." << endl;
+		cout << "1.fighting monsters." << endl;
+		cout << "2.ItemShop" << endl;
+		cin >> MenuChoice; 
 
-}
+
+	}
+};
+

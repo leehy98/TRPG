@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="123.cpp" />
     <ClCompile Include="ClassStats.cpp" />
     <ClCompile Include="inven.cpp" />
     <ClCompile Include="MainMenu.cpp" />
@@ -140,9 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassStats.h" />
+    <ClInclude Include="inven.h" />
+    <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="shop.h" />
     <ClInclude Include="Skill.h" />
+    <ClInclude Include="Status.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
