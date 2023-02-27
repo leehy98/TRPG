@@ -4,7 +4,7 @@
 #include "MainMenu.h"
 #include "MainMenu.cpp"
 
-//Æ÷ÀÎÅÍ vector »ç¿ëÇØ¼­ ¼öÁ¤ ÇÒ ¿¹Á¤
+//í¬ì¸í„° vector ì‚¬ìš©í•´ì„œ ìˆ˜ì • í•  ì˜ˆì •
 using namespace std;
 struct shop
 {
@@ -27,18 +27,18 @@ class ShopMain : public gameStart
 	
 		int HP_PotionPrice = 50, MP_PotionPrice = 50, GHP_PotionPrice = 150, GMP_PotionPrice = 150, antidotePrice = 150, bandagePrice = 150;
 	
-		//¹æ¾î±¸
+		//ë°©ì–´êµ¬
 		int Shield = 10, Armor = 15, helmet = 10, boots = 5, Robe = 8;
 
-		// ±ÙÁ¢ ¹«±â 
-		//Axe³¢°í °ø°İ½Ã ÀÏÁ¤ È®·ü·Î °¡µå ºê·¹ÀÌÅ©, GreateAxe´Â ´õ Å« È®·ü·Î °¡µå ºê·¹ÀÌÅ©
-		//Sword ÇÃ·¹ÀÌ¾î°¡ attack ÇÒ½Ã ÀÏÁ¤ È®·ü·Î »ó´ëÀÇ °ø°İÀ» ¹æ¾î, LongSword´Â ´õ Å« È®·ü·Î ¹æ¾î 
+		// ê·¼ì ‘ ë¬´ê¸° 
+		//Axeë¼ê³  ê³µê²©ì‹œ ì¼ì • í™•ë¥ ë¡œ ê°€ë“œ ë¸Œë ˆì´í¬, GreateAxeëŠ” ë” í° í™•ë¥ ë¡œ ê°€ë“œ ë¸Œë ˆì´í¬
+		//Sword í”Œë ˆì´ì–´ê°€ attack í• ì‹œ ì¼ì • í™•ë¥ ë¡œ ìƒëŒ€ì˜ ê³µê²©ì„ ë°©ì–´, LongSwordëŠ” ë” í° í™•ë¥ ë¡œ ë°©ì–´ 
 		int GreateAxe = 20, Axe = 10, LongSword = 14, Sword = 7, Spear = 13, clip = 9, Degar = 5, MroningStar = 8;
 	
-		// ¿ø°Å¸® ¹«±â
+		// ì›ê±°ë¦¬ ë¬´ê¸°
 		int Bow = 50, ThrowKnife = 20;
 	
-		// Æ÷¼Ç
+		// í¬ì…˜
 		int HP_Potion = 50, MP_Potion = 30, GHP_Potion = 75, GMP_Potion = 45, antidote, bandage ;
 		/*
 		const int armorSize = 5;
@@ -84,18 +84,18 @@ class ShopMain : public gameStart
 	
 	int HP_PotionPrice = 50, MP_PotionPrice = 50, GHP_PotionPrice = 150, GMP_PotionPrice = 150, antidotePrice = 150, bandagePrice = 150;
 	
-	//ë°©ì–´êµ?
+	//è«›â‘¹ë¼±æ´?
 	int Shield = 10, Armor = 15, helmet = 10, boots = 5, Robe = 8;
 
-	// ê·¼ì ‘ ë¬´ê¸° 
-	//Axe?¼ê³  ê³µê²©???¼ì • ?•ë¥ ë¡?ê°€??ë¸Œë ˆ?´í¬, GreateAxe???????•ë¥ ë¡?ê°€??ë¸Œë ˆ?´í¬
-	//Sword ?Œë ˆ?´ì–´ê°€ attack ? ì‹œ ?¼ì • ?•ë¥ ë¡??ë???ê³µê²©??ë°©ì–´, LongSword???????•ë¥ ë¡?ë°©ì–´ 
+	// æ´¹ì‡±ì ’ è‡¾ë‹¿ë¦° 
+	//Axe?ì‡¨í€¬ æ€¨ë“¦êº½???ì‡±ì ™ ?ëº£ìª§æ¿¡?åª›Â€??é‡‰ëš®ì …?ëŒ„ê²•, GreateAxe???????ëº£ìª§æ¿¡?åª›Â€??é‡‰ëš®ì …?ëŒ„ê²•
+	//Sword ?ëš®ì …?ëŒë¼±åª›Â€ attack ?ì¢ë–† ?ì‡±ì ™ ?ëº£ìª§æ¿¡??ê³·???æ€¨ë“¦êº½??è«›â‘¹ë¼±, LongSword???????ëº£ìª§æ¿¡?è«›â‘¹ë¼± 
 	int GreateAxe = 20, Axe = 10, LongSword = 14, Sword = 7, Spear = 13, clip = 9, Degar = 5, MroningStar = 8;
 	
-	// ?ê±°ë¦?ë¬´ê¸°
+	// ?ë¨­êµ…ç”±?è‡¾ë‹¿ë¦°
 	int Bow = 50, ThrowKnife = 20;
 	
-	// ?¬ì…˜
+	// ?ÑŠë€¡
 	int HPpotion = 50, MPpotion = 30, GHPpotion = 75, GMPpotion = 45, antidote, bandage ;
 
 	const shop armor[5] = { {"Shield : ",ShieldPrice, Gold},{"Armor : ",ArmorPrice, Gold},{"helmet : ",helmetPrice, Gold},
@@ -119,8 +119,7 @@ class ShopMain : public gameStart
 	int equipmentChoice = 0;
 	if(MenuChoice == 2)
 	{
-		cout << "Welcome to the shop.Decide what type of equipment to look at" << endl;
->>>>>>> bd022b06005541b82a8f33b2c9fb5b9977bf0e9a
+		cout << "Welcome to the shop.Decide what type of equipment to look at";
 		cin >> equipmentChoice;
 
 		if (equipmentChoice == 1)
@@ -146,11 +145,7 @@ class ShopMain : public gameStart
 			{
 				for (auto const& value : Weapon)
 					cout << "what weapon do you buy" << endl;
-<<<<<<< HEAD
-					cout << i << " : " << Weapon[i].iName << endl;
-=======
-				    cout << i << " : " << Weapon[i] << endl;
->>>>>>> bd022b06005541b82a8f33b2c9fb5b9977bf0e9a
+				    cout << i << " : " << Weapon << endl;
 					cout << endl;
 			}
 	 
@@ -161,11 +156,7 @@ class ShopMain : public gameStart
 			{
 				for (auto const& value : RangeWeapon)
 					cout << "what range weapon do you buy" << endl;
-<<<<<<< HEAD
-					cout << i << " : " << RangeWeapon[i].iName << endl;
-=======
-					cout << i << " : " << RangeWeapon[i] << endl;
->>>>>>> bd022b06005541b82a8f33b2c9fb5b9977bf0e9a
+					cout << i << " : " << RangeWeapon << endl;
 					cout << endl;
 			}
 
@@ -176,23 +167,11 @@ class ShopMain : public gameStart
 			{
 				for (auto const& value : Expendables)
 					cout << "what Expendables do you buy" << endl;
-<<<<<<< HEAD
-					cout << i << " : " << Expendables[i].iName << endl;
-=======
-					cout << i << " : " << Expendables[i] << endl;
->>>>>>> bd022b06005541b82a8f33b2c9fb5b9977bf0e9a
+					cout << i << " : " << Expendables << endl;
 					cout << endl;
 			}
 
 		}
 	}
 
-<<<<<<< HEAD
-	
-
-
-};
-
-=======
 }  
->>>>>>> bd022b06005541b82a8f33b2c9fb5b9977bf0e9a
