@@ -8,14 +8,14 @@ class gameStart
 {
 	int mainPage(int MenuChoice)
 	{
-		int MenuChoice = 0;
+		int MenuChoices = 0;
 
 		cout << "what action would you take." << endl;
 		cout << "1.fighting monsters." << endl;
 		cout << "2.ItemShop" << endl;
-		cin >> MenuChoice; 
+		cin >> MenuChoices; 
 
-
+		return MenuChoice;
 	}
 };
 

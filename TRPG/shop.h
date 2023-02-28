@@ -24,7 +24,7 @@ class SHOP
 
 		int HP_Potion, MP_Potion, GHP_Potion, GMP_Potion, antidote, bandage;
 
-		shop armor[5];
+		shop Armor[5];
 
 		shop Weapon[8];
 

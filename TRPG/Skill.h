@@ -11,7 +11,6 @@ void wizardSKill(int *_magicMissle)
 void pristSkill(int*_holyStrike)
 {
 
-
 }
 void vagabondSKill(int*_slash)
 {
