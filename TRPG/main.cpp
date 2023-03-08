@@ -64,21 +64,9 @@ void testmonster(int* testmonsterHP, int* testmonsterAD, int* _testmonsterDEF)
 	*_testmonsterDEF = 15;
 }
 // ¶³±¸´Â ÅÛ ¹× °ñµå ·® 
-void slimeDropItem(int* slimeGold, int* stickyGel)
-{
-	*slimeGold = 50;
-	*stickyGel = 1;
-}
-void goblinDropItem(int* goblinGold, int* goblinEar)
-{
-	*goblinGold = 75;
-	*goblinEar = 1;
-}
-void lizardManDropItem(int* lizardManGold, int* lizardManTooth)
-{
-	*lizardManGold = 100;
-	*lizardManTooth = 1;
-}
+
+
+
 
 string Class, monster, MonsterDropItem;
 int gold = 0;

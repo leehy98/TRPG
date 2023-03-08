@@ -6,7 +6,7 @@ using namespace std;
 struct inven
 {
 	string iName;
-	
+	unsigned int istats = 0;
 };
 
 int invenMain()

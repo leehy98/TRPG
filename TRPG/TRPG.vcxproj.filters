@@ -37,9 +37,12 @@
     <Filter Include="소스 파일\Skill">
       <UniqueIdentifier>{f14b4618-3f25-4731-9a8e-1fa264032300}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\monster">
+      <UniqueIdentifier>{848fa558-4349-45e8-9ae1-55b9f5586aba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TRPG.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
@@ -66,6 +69,15 @@
     <ClCompile Include="Status.cpp">
       <Filter>소스 파일\Status</Filter>
     </ClCompile>
+    <ClCompile Include="goblin.cpp">
+      <Filter>소스 파일\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="slime.cpp">
+      <Filter>소스 파일\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="lizard man.cpp">
+      <Filter>소스 파일\Monster</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassStats.h">
@@ -83,14 +95,23 @@
     <ClInclude Include="Player.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="MainMenu.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="inven.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>헤더 파일\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="slime.h">
+      <Filter>헤더 파일\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="goblin.h">
+      <Filter>헤더 파일\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="lizard man.h">
+      <Filter>헤더 파일\monster</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

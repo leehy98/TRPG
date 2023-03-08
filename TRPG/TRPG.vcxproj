@@ -128,23 +128,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ClassStats.cpp" />
+    <ClCompile Include="goblin.cpp" />
     <ClCompile Include="inven.cpp" />
+    <ClCompile Include="lizard man.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="shop.cpp" />
     <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="slime.cpp" />
     <ClCompile Include="Status.cpp" />
-    <ClCompile Include="TRPG.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassStats.h" />
+    <ClInclude Include="goblin.h" />
     <ClInclude Include="inven.h" />
+    <ClInclude Include="lizard man.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="shop.h" />
     <ClInclude Include="Skill.h" />
+    <ClInclude Include="slime.h" />
     <ClInclude Include="Status.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
