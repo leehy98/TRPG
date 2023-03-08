@@ -1,6 +1,11 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
 
-static double PlayerStats() 
-{
-	double playerHP, playerMP, playerAD, playerAP, playerDEF;
-}
+extern double playerHP, playerMP, playerAD, playerAP, playerDEF;
+
+void useAntidote();
+void useBandage();
+
+#endif
+
+

@@ -68,29 +68,29 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h">
-      <Filter>소스 파일\Player</Filter>
-    </ClInclude>
     <ClInclude Include="ClassStats.h">
-      <Filter>소스 파일\ClassStats</Filter>
-    </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>소스 파일\Monster</Filter>
-    </ClInclude>
-    <ClInclude Include="Skill.h">
-      <Filter>소스 파일\Skill</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Status.h">
-      <Filter>소스 파일\Status</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="shop.h">
-      <Filter>소스 파일\shop</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="inven.h">
-      <Filter>소스 파일\inven</Filter>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="MainMenu.h">
-      <Filter>소스 파일\MainMenu</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="inven.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

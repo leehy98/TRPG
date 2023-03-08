@@ -1,6 +1,20 @@
 #include "Player.h"
+#include "Status.h"
+#include<iostream>
+#include<string>
 
-static double PlayerStats()
+using namespace std;
+
+double playerHP = 0, playerMP = 0, playerAD = 0, playerAP = 0, playerDEF = 0;
+string useItem;
+
+;void useAntidote()
 {
-	double playerHP = 0, playerMP = 0, playerAD = 0, playerAP = 0, playerDEF = 0;
+	if(status & Poison)
+	{
+	}
+}
+void useBandage()
+{
+
 }

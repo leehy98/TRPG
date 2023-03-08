@@ -9,9 +9,9 @@ using namespace std;
 void warrior(double* warriorHP, double* warriorMP, double* warriorAD, double* warriorAP, double* warriorDEF)
 {
 	*warriorHP = 250;
-	*warriorMP =  50;
-	*warriorAD =  40;
-	*warriorAP =  15;
+	*warriorMP = 50;
+	*warriorAD = 40;
+	*warriorAP = 15;
 	*warriorDEF = 30;
 }
 void Wizard(double* WizardHP, double* WizardMP, double* WizardAD, double* WizardAP, double* WizardDEF)
@@ -25,10 +25,10 @@ void Wizard(double* WizardHP, double* WizardMP, double* WizardAD, double* Wizard
 void prist(double* pristHP, double* pristMP, double* pristAD, double* pristAP, double* pristDEF)
 {
 	*pristHP = 175,
-	* pristMP = 150,
-	* pristAD = 25,
-	* pristAP = 50,
-	* pristDEF = 20;
+		* pristMP = 150,
+		* pristAD = 25,
+		* pristAP = 50,
+		* pristDEF = 20;
 }
 void vagabond(double* vagabondHP, double* vagabondMP, double* vagabondAD, double* vagabondAP, double* vagabondDEF)
 {
@@ -74,13 +74,13 @@ void goblinDropItem(int* goblinGold, int* goblinEar)
 	*goblinGold = 75;
 	*goblinEar = 1;
 }
-void lizardManDropItem(int* lizardManGold, int*lizardManTooth)
+void lizardManDropItem(int* lizardManGold, int* lizardManTooth)
 {
 	*lizardManGold = 100;
 	*lizardManTooth = 1;
 }
 
-string C1ass, monster, MonsterDropItem;
+string Class, monster, MonsterDropItem;
 int gold = 0;
 int stickyGel = 0;
 int goblinEar = 0;
@@ -96,149 +96,149 @@ int monsterHP = 10, monsterAD = 10, monsterDEF = 10;
 int playerSelect = 0, monsterSelect = 0;
 
 
-	double main()
+double main()
+{
+
+	int choice = 0;
+
+	cout << "choose your Class." << endl;
+	cout << "Hidden selection when entering a specific number" << endl;
+	cout << "1. warrior" << endl;
+	cout << "2. wizard" << endl;
+	cout << "3. prist" << endl;
+	cin >> choice;
+
+	if (choice == 1)
 	{
+		Class = "warrior";
+		warrior(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		cout << "choose warrior." << endl << endl;
+	}
+	else if (choice == 2)
+	{
+		Class = "wizard";
+		Wizard(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		cout << "choose wizard." << endl << endl;
+	}
+	else if (choice == 3)
+	{
+		Class = "prist";
+		prist(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		cout << "choose prist." << endl << endl;
+	}
+	// 히든
+	else if (choice == 100)
+	{
+		Class = "vagabond";
+		vagabond(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		cout << "choose hidden CLASS, vagabond." << endl << endl;
+	}
 
-		int choice = 0;
+	int choiceMonster = 0;
+	system("cls");
+	cout << "Choose a monster to fight." << endl;
+	cout << "1. slime" << endl;
+	cout << "2. goblin" << endl;
+	cout << "3. lizardMan" << endl;
+	cin >> choiceMonster;
 
-		cout << "choose your Class." << endl;
-		cout << "Hidden selection when entering a specific number" << endl;
-		cout << "1. warrior" << endl;
-		cout << "2. wizard" << endl;
-		cout << "3. prist" << endl;
-		cin >> choice;
+	if (choiceMonster == 1)
+	{
+		monster = "slime";
+		cout << "The monsters you will fight are slimes." << endl;
+		slime(&monsterHP, &monsterAD, &monsterDEF);
+	}
+	if (choiceMonster == 2)
+	{
+		monster = "goblin";
+		cout << "The monsters you will fight are goblins." << endl;
+		goblin(&monsterHP, &monsterAD, &monsterDEF);
+	}
+	if (choiceMonster == 3)
+	{
+		monster = "lizardMan";
+		cout << "The monsters you will fight are lizardMans." << endl;
+		lizardMan(&monsterHP, &monsterAD, &monsterDEF);
+	}
+	if (choiceMonster == 999)
+	{
+		cout << "The monsters you will fight are testMonsters." << endl << endl;
+		testmonster(&monsterHP, &monsterAD, &monsterDEF);
+	}
+	srand(unsigned(time(NULL)));
 
-		if (choice == 1)
-		{
-			C1ass = "warrior";
-			warrior(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
-			cout << "choose warrior." << endl << endl;
-		}
-		else if (choice == 2)
-		{
-			C1ass = "wizard";
-			Wizard(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
-			cout << "choose wizard." << endl << endl;
-		}
-		else if (choice == 3)
-		{
-			C1ass = "prist";
-			prist(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
-			cout << "choose prist." << endl << endl;
-		}
-		// 히든
-		else if (choice == 100)
-		{
-			C1ass = "vagabond";
-			vagabond(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
-			cout << "choose hidden CLASS, vagabond." << endl << endl;
-		}
+	// 게임 시작
+	system("cls");
+	while (true)
+	{
+		cout << "class : " << Class << "      " << monster << " : monster" << endl;;
+		cout << "playerHP : " << playerHP << "       " << monsterHP << " : monsterHP" << endl;
+		cout << "1 . Attack" << endl;
+		cout << "2 . Defence" << endl;
+		//  cout << "3 . Skill" << endl;
+		//	cout << "4. run" << endl;
+		cout << endl;
+		cin >> playerSelect;
+		monsterSelect = rand() % 2 + 1;
 
-		int choiceMonster = 0;
-		system("cls");
-		cout << "Choose a monster to fight." << endl;
-		cout << "1. slime" << endl;
-		cout << "2. goblin" << endl;
-		cout << "3. lizardMan" << endl;
-		cin >> choiceMonster;
-
-		if (choiceMonster == 1)
+		//전투 시스템
+		if (playerSelect == 1)
 		{
-			monster = "slime";
-			cout << "The monsters you will fight are slimes." << endl;
-			slime(&monsterHP, &monsterAD, &monsterDEF);
+			cout << "player Attack" << endl;
+			monsterHP -= (playerAD - monsterDEF / 5);
 		}
-		if (choiceMonster == 2)
+		if (playerSelect == 2)
 		{
-			monster = "goblin";
-			cout << "The monsters you will fight are goblins." << endl;
-			goblin(&monsterHP, &monsterAD, &monsterDEF);
-		}
-		if (choiceMonster == 3)
-		{
-			monster = "lizardMan";
-			cout << "The monsters you will fight are lizardMans." << endl;
-			lizardMan(&monsterHP, &monsterAD, &monsterDEF);
-		}
-		if (choiceMonster == 999)
-		{
-			cout << "The monsters you will fight are testMonsters." << endl << endl;
-			testmonster(&monsterHP, &monsterAD, &monsterDEF);
-		}
-		srand(unsigned(time(NULL)));
-
-		// 게임 시작
-		system("cls");
-		while (true)
-		{
-			cout << "class : " << C1ass << "      " << monster << " : monster" << endl;;
-			cout << "playerHP : " << playerHP << "       " << monsterHP << " : monsterHP" << endl;
-			cout << "1 . Attack" << endl;
-			cout << "2 . Defence" << endl;
-			//  cout << "3 . Skill" << endl;
-			//	cout << "4. run" << endl;
-			cout << endl;
-			cin >> playerSelect;
-			monsterSelect = rand() % 2 + 1;
-
-			//전투 시스템
-			if (playerSelect == 1)
-			{
-				cout << "player Attack" << endl;
-				monsterHP -= (playerAD - monsterDEF / 5);
-			}
-			if (playerSelect == 2)
-			{
-				if (monsterSelect == 1)
-				{
-					cout << "player Defence" << endl;
-					playerDEF += playerDEF;
-				}
-			}
 			if (monsterSelect == 1)
 			{
-				cout << "monster Attack" << endl;
-				playerHP -= (monsterAD - playerDEF / 5);
+				cout << "player Defence" << endl;
+				playerDEF += playerDEF;
 			}
-			if (monsterSelect == 2)
+		}
+		if (monsterSelect == 1)
+		{
+			cout << "monster Attack" << endl;
+			playerHP -= (monsterAD - playerDEF / 5);
+		}
+		if (monsterSelect == 2)
+		{
+			if (playerSelect == 1)
 			{
-				if (playerSelect == 1)
-				{
-					cout << "monster Defence" << endl;
-					monsterDEF += monsterDEF;
-				}
+				cout << "monster Defence" << endl;
+				monsterDEF += monsterDEF;
 			}
-			if (playerHP < 1)
+		}
+		if (playerHP < 1)
+		{
+			cout << "player failed." << endl;
+
+			break;
+		}
+		if (monsterHP < 1)
+		{
+			cout << "monster failed." << endl;
+
+			if (monster == "slime")
 			{
-				cout << "player failed." << endl;
-
-				break;
+				slimeDropItem(&gold, &stickyGel);
 			}
-			if (monsterHP < 1)
+			if (monster == "goblin")
 			{
-				cout << "monster failed." << endl;
-
-				if (monster == "slime")
-				{
-					slimeDropItem(&gold, &stickyGel);
-				}
-				if (monster == "goblin")
-				{
-					goblinDropItem(&gold, &goblinEar);
-				}
-				if (monster == "lizardMan")
-				{
-					lizardManDropItem(&gold, &lizardManTooth);
-				}
-				break;
+				goblinDropItem(&gold, &goblinEar);
 			}
-
+			if (monster == "lizardMan")
+			{
+				lizardManDropItem(&gold, &lizardManTooth);
+			}
+			break;
 		}
 
 	}
 
+}
 
-	
+
+
 
 
 

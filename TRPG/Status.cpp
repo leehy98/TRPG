@@ -1,24 +1,27 @@
 #include<iostream>
+#include"player.h"
+#include"Monster.h"
 #define Bleeding   0x001
 #define Poison	   0x002
 
 using namespace std;
-int mainStatus()
+
+int status()
 {
 	int count = 10;
-	int Status = 0;
+	int status = 0;
 	
 	for (int i = 0; i < count; i++) 
 	{
 		if (monster == "goblin" && playerHP--)
 		{
 			cout << "Addicted! drink antidote!" << endl;
-			Status |= Poison;
+			status |= Poison;
 			playerHP -= 1;
 			if (useItem == "antidote")
 			{
 				cout << "I took the antidote. has been detoxified" << endl;
-				Status &= ~Poison;
+				status &= ~Poison;
 				
 			}
 		}
@@ -27,13 +30,13 @@ int mainStatus()
 	{
 		if (monster == "lizardMan" && playerHP--)
 		{
-			Status |= Bleeding;
+			status |= Bleeding;
 			playerHP -= 1;
 			cout << "bleeding! Put on a bandage!" << endl;
 			if (useItem == "bandage")
 			{
 				cout << "bandaged up The bleeding has stopped." << endl;
-				Status &= ~Bleeding;
+				status &= ~Bleeding;
 			}
 		}
 	}
