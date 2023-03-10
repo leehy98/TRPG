@@ -1,17 +1,20 @@
 #include<iostream>
 #include"player.h"
-#include"Monster.h"
+#include"MonsterValue.h"
+#include "main.h"
+
 #define Bleeding   0x001
 #define Poison	   0x002
-
+// Player.cpp에 있는 상태이상 해제는 이쪽에서 구현
 using namespace std;
+
+
 
 int status()
 {
 	int count = 10;
 	int status = 0;
-	
-	for (int i = 0; i < count; i++) 
+	for (int i = 0; i < count; i++)
 	{
 		if (monster == "goblin" && playerHP--)
 		{
@@ -35,7 +38,7 @@ int status()
 			cout << "bleeding! Put on a bandage!" << endl;
 			if (useItem == "bandage")
 			{
-				cout << "bandaged up The bleeding has stopped." << endl;
+				cout << "bandaged up. The bleeding has stopped." << endl;
 				status &= ~Bleeding;
 			}
 		}

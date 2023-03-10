@@ -13,5 +13,6 @@ int invenMain()
 {
 	const int invenSize = 10;
 	vector<inven> inventory(invenSize);
+
 	return 0;
 }

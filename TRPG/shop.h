@@ -6,19 +6,19 @@ class SHOP
 	int ShopMain()
 	{
 		string Gold;
-		int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
+		extern int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
 
-		int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
+		extern int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
 
-		int BowPrice, ThrowKnifePrice;
+		extern int BowPrice, ThrowKnifePrice;
 
-		int HP_PotionPrice, MP_PotionPrice, GHP_PotionPrice, GMP_PotionPrice, antidotePrice, bandagePrice;
+		extern int HP_PotionPrice, MP_PotionPrice, GHP_PotionPrice, GMP_PotionPrice, antidotePrice, bandagePrice;
 
-		int Shield, Armor, helmet, boots, Robe;
+		extern int Shield, Armor, helmet, boots, Robe;
 
-		int GreateAxe, Axe, LongSword, Sword, Spear, clip, Degar, MroningStar;
+		extern int GreateAxe, Axe, LongSword, Sword, Spear, clip, Degar, MroningStar;
 
-		int Bow, ThrowKnife;
+		extern int Bow, ThrowKnife;
 
 		int HP_Potion, MP_Potion, GHP_Potion, GMP_Potion, antidote, bandage;
 
