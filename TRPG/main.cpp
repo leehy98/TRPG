@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
+#include "MainMenu.h"
+#include "main.h"
 #include "Player.h"
 #include "MonsterValue.h"
 #include "goblin.h"
@@ -23,35 +25,35 @@ int playerSelect = 0, monsterSelect = 0;
 
 double main()
 {
-	int choice = 0;
+	int choiceClass = 0;
 
 	cout << "choose your Class." << endl;
 	cout << "Hidden selection when entering a specific number" << endl;
 	cout << "1. warrior" << endl;
 	cout << "2. wizard" << endl;
 	cout << "3. prist" << endl;
-	cin >> choice;
+	cin >> choiceClass;
 
-	if (choice == 1)
+	if (choiceClass == 1)
 	{
 		Class = "warrior";
 		warrior(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
 		cout << "choose warrior." << endl << endl;
 	}
-	else if (choice == 2)
+	else if (choiceClass == 2)
 	{
 		Class = "wizard";
 		wizard(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
 		cout << "choose wizard." << endl << endl;
 	}
-	else if (choice == 3)
+	else if (choiceClass == 3)
 	{
 		Class = "prist";
 		prist(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
 		cout << "choose prist." << endl << endl;
 	}
 	// È÷µç
-	else if (choice == 100)
+	else if (choiceClass == 100)
 	{
 		Class = "vagabond";
 		vagabond(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);

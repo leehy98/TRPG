@@ -16,9 +16,9 @@ struct shop
 	string gold;
 };
 
-class ShopMain
+class Shops
 {
-	int Main()
+	int ShpoMain()
 	{
 		//return mainPage();
 		string Gold = "G";

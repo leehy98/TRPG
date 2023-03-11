@@ -1,4 +1,4 @@
-#include "lizard man.h"
+#include "lizardMan.h"
 void lizardMan(int* lizardManHP, int* lizardManAD, int* lizardManDEF)
 {
 	*lizardManHP = 270;

@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
 #include "MainMenu.h"
+#include "main.h"
+#include "shop.h"
 
 using namespace std;
 
@@ -12,6 +13,16 @@ int mainPage(int MenuChoice)
 	cout << "1.fighting monsters." << endl;
 	cout << "2.ItemShop" << endl;
 	cin >> MenuChoices;
+
+	if(MenuChoices == 1)
+	{
+		main();
+	}
+	if (MenuChoices == 2)
+	{
+		ShpoMain();
+	}
+
 
 }	
 

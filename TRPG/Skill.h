@@ -1,18 +1,9 @@
-#pragma once
+#ifndef SHILL_H
+#define SHILL_H
+void warriorSkill(int bash){}
+void wizardSKill(int magicMissle){}
+void pristSkill(int holyStrike){}
+void vagabondSKill(int slash){}
+#endif
 
-void warriorSkill(int *_bash)
-{
 
-}
-void wizardSKill(int *_magicMissle)
-{
-
-}
-void pristSkill(int*_holyStrike)
-{
-
-}
-void vagabondSKill(int*_slash)
-{
-
-}

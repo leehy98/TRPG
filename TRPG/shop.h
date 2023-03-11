@@ -1,11 +1,19 @@
-#pragma once
-struct shop{};
-
-class SHOP
+#ifndef SHOP_H
+#define SHOP_H
+#include <iostream>
+#include <string>
+typedef struct shop
 {
-	int ShopMain()
+	std::string iName;
+	int iPrice;
+	std::string gold;
+};
+
+class Shops
+{
+	int ShpoMain()
 	{
-		string Gold;
+		std::string Gold;
 		extern int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
 
 		extern int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
@@ -47,3 +55,6 @@ class SEll_Item
 {
 
 };
+
+#endif 
+
