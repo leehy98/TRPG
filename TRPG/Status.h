@@ -6,9 +6,5 @@
 
 #endif 
 
-int status()
-{
-    int count;
-    int status;
-    return 0;
-}
+int status();
+

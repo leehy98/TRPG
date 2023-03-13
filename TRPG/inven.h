@@ -1,12 +1,12 @@
 #ifndef INVEN_H
 #define INVEN_H
 
-extern struct inven {};
-int invenMain()
+#include<vector>
+#include<string>
+extern struct inven 
 {
-	int invenSize;
-	vector<inven> inventory();
-	
+	string iName;
+	unsigned int istats;
 };
-
+int invenMain();
 #endif 

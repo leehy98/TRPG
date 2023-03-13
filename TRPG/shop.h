@@ -2,31 +2,31 @@
 #define SHOP_H
 #include <iostream>
 #include <string>
-typedef struct shop
+extern struct shop
 {
 	std::string iName;
 	int iPrice;
 	std::string gold;
 };
 
-class Shops
+extern class Shops
 {
 	int ShpoMain()
 	{
 		std::string Gold;
-		extern int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
+		int ShieldPrice, ArmorPrice, helmetPrice, bootsPrice, RobePrice;
 
-		extern int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
+		int GreateAxePrice, AxePrice, LongSwordPrice, SwordPrice, SpearPrice, clipPrice, DegarPrice, MroningStarPrice;
 
-		extern int BowPrice, ThrowKnifePrice;
+		int BowPrice, ThrowKnifePrice;
 
-		extern int HP_PotionPrice, MP_PotionPrice, GHP_PotionPrice, GMP_PotionPrice, antidotePrice, bandagePrice;
+		int HP_PotionPrice, MP_PotionPrice, GHP_PotionPrice, GMP_PotionPrice, antidotePrice, bandagePrice;
 
-		extern int Shield, Armor, helmet, boots, Robe;
+		int Shield, Armor, helmet, boots, Robe;
 
-		extern int GreateAxe, Axe, LongSword, Sword, Spear, clip, Degar, MroningStar;
+		int GreateAxe, Axe, LongSword, Sword, Spear, clip, Degar, MroningStar;
 
-		extern int Bow, ThrowKnife;
+		int Bow, ThrowKnife;
 
 		int HP_Potion, MP_Potion, GHP_Potion, GMP_Potion, antidote, bandage;
 
@@ -47,14 +47,8 @@ class Shops
 	}
 };
 
-class Buy_Item
-{
-
-};
-class SEll_Item
-{
-
-};
+class Buy_Item;
+class SEll_Item;
 
 #endif 
 

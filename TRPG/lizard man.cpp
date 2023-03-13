@@ -1,5 +1,5 @@
 #include "lizardMan.h"
-void lizardMan(int* lizardManHP, int* lizardManAD, int* lizardManDEF)
+void lizardMan(double* lizardManHP, double* lizardManAD, double* lizardManDEF)
 {
 	*lizardManHP = 270;
 	*lizardManAD = 35;

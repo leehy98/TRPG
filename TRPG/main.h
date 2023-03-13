@@ -4,20 +4,15 @@
 #include <iostream>
 #include <string>
 
-std::string Class, monster, MonsterDropItem;
+extern std::string Class, monster, MonsterDropItem;
 
-int gold;
-int stickyGel;
-int goblinEar;
-int lizardManTooth;
+extern int gold;
+extern int stickyGel;
+extern int goblinEar;
+extern int lizardManTooth;
+extern int playerSelect, monsterSelect;
 
-int playerSelect = 0, monsterSelect = 0;
-double main()
-{
-	int choiceClass;
-	int choiceMonster;
+int main();
 
-	srand(unsigned(time(NULL)));
-}	
 #endif 
 

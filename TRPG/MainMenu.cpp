@@ -23,6 +23,6 @@ int mainPage(int MenuChoice)
 		ShopMain();
 	}
 
-
+	return 0;
 }	
 

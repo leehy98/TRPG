@@ -1,5 +1,5 @@
 #ifndef LIZARD_MAN_H
 #define LIZARD_MAN_H
-void lizardMan(int* lizardManHP, int* lizardManAD, int* lizardManDEF){}
-void lizardManDropItem(int* lizardManGold, int* lizardManTooth){}
+void lizardMan(double* lizardManHP, double* lizardManAD, double* lizardManDEF);
+void lizardManDropItem(int* lizardManGold, int* lizardManTooth);
 #endif 

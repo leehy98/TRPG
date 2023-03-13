@@ -1,5 +1,5 @@
 #include "goblin.h"
-void goblin(int* goblinHP, int* goblinAD, int* goblinDEF)
+void goblin(double* goblinHP, double* goblinAD, double* goblinDEF)
 {
 	*goblinHP = 150;
 	*goblinAD = 25;

@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
-#include<vector>
+#include <vector>
 #include "shop.h"
 #include "MainMenu.h"
 #include "inven.h"
 
 
 //포인터 vector 사용해서 수정 할 예정
+
 using namespace std;
 
 struct shop
@@ -18,7 +19,7 @@ struct shop
 
 class Shops
 {
-	int ShpoMain()
+	int ShopMain()
 	{
 		//return mainPage();
 		string Gold = "G";
@@ -51,8 +52,8 @@ class Shops
 		int WeaponSize = 8;
 		int RangeWeaponSize = 3;
 		int ExpendablesSize = 6;
-		*/
-	
+		*/	
+
 		const shop Armor[5] = { {"Shield : ",ShieldPrice, Gold},
 								{"Armor : ",ArmorPrice, Gold},
 								{"helmet : ",helmetPrice, Gold},  
@@ -60,7 +61,7 @@ class Shops
 								{"robe : ",RobePrice, Gold} 
 		};
 
-		 const shop Weapon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},
+		const shop Weapon[8] = { {"GreateAxe : ",GreateAxePrice, Gold},
 								  {"Axe : ", AxePrice, Gold},
 								  {"LongSword : ", LongSwordPrice, Gold},
 								  {"Sword : ", SwordPrice, Gold},
@@ -68,13 +69,13 @@ class Shops
 								  {"clip : ", clipPrice, Gold},
 								  {"Degar : ", DegarPrice, Gold},
 								  {"MroningStar : ", MroningStarPrice, Gold} 
-		  };
+		 };
 
-		 const shop RangeWeapon[3] = { {"Bow : ",BowPrice, Gold},
+		const shop RangeWeapon[3] = { {"Bow : ",BowPrice, Gold},
 									 {"ThrowKnife : ", ThrowKnifePrice , Gold} 
 		};
 
-		 const shop Expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},
+		const shop Expendables[6] = { {"HealingPotion : ", HP_PotionPrice,  Gold},
 									   {"ManaPotion : ", MP_PotionPrice, Gold},
 									   {"GreateHealingPotion : ", GHP_PotionPrice, Gold},
 									   {"GreateManaPotion : ", GMP_PotionPrice, Gold},
@@ -157,24 +158,5 @@ class Shops
 // i번째 아이템을 사려고 선택 하게 되면 <vector>inventory 로 push 하고 팔게되면 
 // 아이템 가격의 50%를 돌려받고 해당 index 는 erase 하도록 할 예정
 
-class Buy_Item : public Shops
-{
-	int buy_item()
-	{
-		int buy;
-		int choice_item;
-		cin >> choice_item;
-		if (buy == 1)
-		{
-			
-		};
 
-	}
-	
-};
-
-class SEll_Item : public Shops
-{
-
-};
 

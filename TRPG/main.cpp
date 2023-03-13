@@ -20,11 +20,13 @@ int stickyGel = 0;
 int goblinEar = 0;
 int lizardManTooth = 0;
 
-//플레이어와 몬스터의 행동 변수 
-int playerSelect = 0, monsterSelect = 0;
+int main()
+{	
+	
 
-double main()
-{
+	//플레이어와 몬스터의 행동 변수 
+	int playerSelect = 0, monsterSelect = 0;
+
 	int choiceClass = 0;
 
 	cout << "choose your Class." << endl;

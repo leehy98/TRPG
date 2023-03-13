@@ -1,6 +1,6 @@
 #include "slime.h"
 
-void slime(int* slimeHP, int* slimeAD, int* slimeDEF)
+void slime(double* slimeHP, double* slimeAD, double* slimeDEF)
 {
 	*slimeHP = 100;
 	*slimeAD = 10;
