@@ -13,20 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\inven">
-      <UniqueIdentifier>{8347416a-b284-4834-9ce3-53aaa71f5c38}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\MainMenu">
       <UniqueIdentifier>{08301206-106d-48d1-aafa-97681b1ea48f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\shop">
-      <UniqueIdentifier>{296dd40c-a12a-44ff-9a9d-632236749b31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Status">
-      <UniqueIdentifier>{09fbce71-9d0d-4006-ac11-b034f499d038}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\ClassStats">
-      <UniqueIdentifier>{fa5be3e6-1379-49e7-bd86-cb006c516920}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Monster">
       <UniqueIdentifier>{5cb2e28a-c659-414f-b417-ba537edd06ac}</UniqueIdentifier>
@@ -34,40 +22,22 @@
     <Filter Include="소스 파일\Player">
       <UniqueIdentifier>{f768da32-d106-461f-b72a-374b7739afb6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Skill">
-      <UniqueIdentifier>{f14b4618-3f25-4731-9a8e-1fa264032300}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\monster">
       <UniqueIdentifier>{848fa558-4349-45e8-9ae1-55b9f5586aba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\player">
+      <UniqueIdentifier>{6d20d7a5-6153-4df4-ac65-263d3a431915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\main">
+      <UniqueIdentifier>{ad51f8f1-e1ff-4f49-85d1-5f8433c6a3e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일\Player</Filter>
     </ClCompile>
-    <ClCompile Include="ClassStats.cpp">
-      <Filter>소스 파일\ClassStats</Filter>
-    </ClCompile>
-    <ClCompile Include="Monster.cpp">
-      <Filter>소스 파일\Monster</Filter>
-    </ClCompile>
-    <ClCompile Include="Skill.cpp">
-      <Filter>소스 파일\Skill</Filter>
-    </ClCompile>
-    <ClCompile Include="inven.cpp">
-      <Filter>소스 파일\inven</Filter>
-    </ClCompile>
     <ClCompile Include="MainMenu.cpp">
       <Filter>소스 파일\MainMenu</Filter>
-    </ClCompile>
-    <ClCompile Include="shop.cpp">
-      <Filter>소스 파일\shop</Filter>
-    </ClCompile>
-    <ClCompile Include="Status.cpp">
-      <Filter>소스 파일\Status</Filter>
     </ClCompile>
     <ClCompile Include="goblin.cpp">
       <Filter>소스 파일\Monster</Filter>
@@ -78,40 +48,64 @@
     <ClCompile Include="lizard man.cpp">
       <Filter>소스 파일\Monster</Filter>
     </ClCompile>
+    <ClCompile Include="ClassStats.cpp">
+      <Filter>소스 파일\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="inven.cpp">
+      <Filter>소스 파일\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="shop.cpp">
+      <Filter>소스 파일\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>소스 파일\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Status.cpp">
+      <Filter>소스 파일\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterValue.cpp">
+      <Filter>소스 파일\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\MainMenu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassStats.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Status.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Skill.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="shop.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenu.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="inven.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>헤더 파일\monster</Filter>
-    </ClInclude>
     <ClInclude Include="slime.h">
       <Filter>헤더 파일\monster</Filter>
     </ClInclude>
     <ClInclude Include="goblin.h">
       <Filter>헤더 파일\monster</Filter>
     </ClInclude>
-    <ClInclude Include="lizard man.h">
+    <ClInclude Include="ClassStats.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="inven.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="lizardMan.h">
       <Filter>헤더 파일\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterValue.h">
+      <Filter>헤더 파일\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="shop.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="Status.h">
+      <Filter>헤더 파일\player</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>헤더 파일\main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>헤더 파일\main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -18,17 +18,17 @@ void wizard(double* WizardHP, double* WizardMP, double* WizardAD, double* Wizard
 }
 void prist(double* pristHP, double* pristMP, double* pristAD, double* pristAP, double* pristDEF)
 {
-	*pristHP = 175,
-	* pristMP = 150,
-	* pristAD = 25,
-	* pristAP = 50,
-	* pristDEF = 20;
+	*pristHP = 175;
+	*pristMP = 150;
+	*pristAD = 25;
+	*pristAP = 50;
+	*pristDEF = 20;
 }
 void vagabond(double* vagabondHP, double* vagabondMP, double* vagabondAD, double* vagabondAP, double* vagabondDEF)
 {
-	*vagabondHP = 155;
-	*vagabondMP = 130;
-	*vagabondAD = 50;
-	*vagabondAP = 35;
-	*vagabondDEF = 25;
+	* vagabondHP = 155;
+	* vagabondMP = 130;
+	* vagabondAD = 50;
+	* vagabondAP = 35;
+	* vagabondDEF = 25;
 }

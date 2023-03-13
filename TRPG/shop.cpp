@@ -149,6 +149,7 @@ class Shops
 
 		}
 
+		return 0;
 	}
 
 };
@@ -156,7 +157,7 @@ class Shops
 // i번째 아이템을 사려고 선택 하게 되면 <vector>inventory 로 push 하고 팔게되면 
 // 아이템 가격의 50%를 돌려받고 해당 index 는 erase 하도록 할 예정
 
-class Buy_Item : public ShopMain 
+class Buy_Item : public Shops
 {
 	int buy_item()
 	{
@@ -172,7 +173,7 @@ class Buy_Item : public ShopMain
 	
 };
 
-class SEll_Item : public ShopMain
+class SEll_Item : public Shops
 {
 
 };

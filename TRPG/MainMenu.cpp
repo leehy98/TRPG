@@ -20,7 +20,7 @@ int mainPage(int MenuChoice)
 	}
 	if (MenuChoices == 2)
 	{
-		ShpoMain();
+		ShopMain();
 	}
 
 
