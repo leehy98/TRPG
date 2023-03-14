@@ -3,10 +3,15 @@
 
 #include<vector>
 #include<string>
-extern struct inven 
+extern struct inven
 {
-	string iName;
+	std::string iName;
 	unsigned int istats;
 };
-int invenMain();
+class inv
+{
+public:
+	int invenMain();
+};
+
 #endif 

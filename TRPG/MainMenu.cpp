@@ -5,24 +5,28 @@
 
 using namespace std;
 
-int mainPage(int MenuChoice)
+class main 
 {
-	int MenuChoices = 0;
-
-	cout << "what action would you take." << endl;
-	cout << "1.fighting monsters." << endl;
-	cout << "2.ItemShop" << endl;
-	cin >> MenuChoices;
-
-	if(MenuChoices == 1)
+	int mainPage(int MenuChoice)
 	{
-		main();
-	}
-	if (MenuChoices == 2)
-	{
-		ShopMain();
-	}
+		int MenuChoices = 0;
 
-	return 0;
-}	
+		cout << "what action would you take." << endl;
+		cout << "1.fighting monsters." << endl;
+		cout << "2.ItemShop" << endl;
+		cin >> MenuChoices;
+
+		if (MenuChoices == 1)
+		{
+			main();
+		}
+		if (MenuChoices == 2)
+		{
+			
+		}
+
+		return 0;
+	}
+};
+
 

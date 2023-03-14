@@ -9,10 +9,16 @@ struct inven
 	unsigned int istats = 0;
 };
 
-int invenMain()
+class inv
 {
-	const int invenSize = 10;
-	vector<inven> inventory(invenSize);
+public:
 
-	return 0;
-}
+	int invenMain()
+	{
+		const int invenSize = 10;
+		vector<inven> inventory(invenSize);
+
+		return 0;
+	}
+};
+
