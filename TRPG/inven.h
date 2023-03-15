@@ -3,14 +3,12 @@
 
 #include<vector>
 #include<string>
-extern struct inven
-{
-	std::string iName;
-	unsigned int istats;
-};
-class inv
+
+class inventory
 {
 public:
+	inventory();
+	~inventory();
 	int invenMain();
 };
 

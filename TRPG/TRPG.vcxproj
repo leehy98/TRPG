@@ -130,6 +130,7 @@
     <ClCompile Include="ClassStats.cpp" />
     <ClCompile Include="goblin.cpp" />
     <ClCompile Include="inven.cpp" />
+    <ClCompile Include="item.cpp" />
     <ClCompile Include="lizard man.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="MonsterValue.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="ClassStats.h" />
     <ClInclude Include="goblin.h" />
     <ClInclude Include="inven.h" />
+    <ClInclude Include="item.h" />
     <ClInclude Include="lizardMan.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="MainMenu.h" />

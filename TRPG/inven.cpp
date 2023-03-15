@@ -1,24 +1,24 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "inven.h"
+#include "shop.h"
 using namespace std;
 
-struct inven
+inventory::inventory()
 {
-	string iName;
-	unsigned int istats = 0;
-};
 
-class inv
+};
+inventory::~inventory()
 {
-public:
 
-	int invenMain()
-	{
-		const int invenSize = 10;
-		vector<inven> inventory(invenSize);
+}
 
-		return 0;
-	}
-};
+int invenMain()
+{
+	const int invenSize = 10;
+	vector<inventory> inventory(invenSize);
+
+	return 0;
+}
 
