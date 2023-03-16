@@ -13,18 +13,9 @@ int WeaponSize = 8;
 int RangeWeaponSize = 3;
 int ExpendablesSize = 6;
 
-//item 생성자
-item::item(const std::string& name, int price) : iname(name), iprice(price)
-{
 
-}
-//item 소멸자
-item::~item()
-{
-
-}
 // shop 생성자
-shop::shop()
+shop::shop(const std::string& name, int price) : iname(name), iprice(price)
 {
 
 };
@@ -32,29 +23,29 @@ shop::~shop()
 {
 
 };
-vector<item> shop::Weapon()
+vector<shop> shop::Weapon()
 {
-	std::vector<item> weaponList = { itemStats::GreatAxe, Axe, Longsword, Sword, Spear, Clip, Degar, Mroningstar };
+	std::vector<shop> weaponList = {};
 	return weaponList;
 }
 
 
-vector<item>shop::Armor()
+vector<shop>shop::Armor()
 {
-	vector<item> ArmorList = {};
-	return;
+	vector<shop> ArmorList = {};
+	return ArmorList;
 }
 
-vector<item>shop::RangeWeapon()
+vector<shop>shop::RangeWeapon()
 {
-	vector<item> RangeWeaponList = {};
-	return;
+	vector<shop> RangeWeaponList = {};
+	return RangeWeaponList;
 }
 
-vector<item> shop::Expendables()
+vector<shop> shop::Expendables()
 {
-	vector<item> ExpendablesList = {};
-	return;
+	vector<shop> ExpendablesList = {};
+	return ExpendablesList;
 }
 
 // shop 소멸자
@@ -117,22 +108,7 @@ int shop::ShopMain()
 
 
 
-buy_Item::buy_Item()
-{
 
-}
-buy_Item::~buy_Item()
-{
-
-}
-sell_Item::sell_Item()
-{
-
-};
-sell_Item::~sell_Item()
-{
-
-};
 
 
 

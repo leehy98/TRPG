@@ -63,6 +63,7 @@ int main()
 	}
 
 	int choiceMonster = 0;
+
 	system("cls");
 	cout << "Choose a monster to fight." << endl;
 	cout << "1. slime" << endl;

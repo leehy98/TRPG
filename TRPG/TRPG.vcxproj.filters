@@ -45,7 +45,7 @@
     <ClCompile Include="slime.cpp">
       <Filter>소스 파일\Monster</Filter>
     </ClCompile>
-    <ClCompile Include="lizard man.cpp">
+    <ClCompile Include="lizardMan.cpp">
       <Filter>소스 파일\Monster</Filter>
     </ClCompile>
     <ClCompile Include="ClassStats.cpp">

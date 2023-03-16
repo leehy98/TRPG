@@ -131,11 +131,13 @@
     <ClCompile Include="goblin.cpp" />
     <ClCompile Include="inven.cpp" />
     <ClCompile Include="item.cpp" />
-    <ClCompile Include="lizard man.cpp" />
+    <ClCompile Include="lizardMan.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="MonsterValue.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="shop.cpp" />
+    <ClCompile Include="shop.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Skill.cpp" />
     <ClCompile Include="slime.cpp" />
     <ClCompile Include="Status.cpp" />
@@ -151,7 +153,9 @@
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="MonsterValue.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="shop.h" />
+    <ClInclude Include="shop.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Skill.h" />
     <ClInclude Include="slime.h" />
     <ClInclude Include="Status.h" />

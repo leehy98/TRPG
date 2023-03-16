@@ -1,14 +1,99 @@
-#include"item.h"
-using namespace std;
+#include "item.h"
 
-//아이템 능력치
-int itemStats::Shield = 10, Armor = 15, helmet = 10, Boots = 5, Robe = 8;
-int itemStats::GreateAxe = 20, Axe = 10, Longsword = 14, sword = 7, Spear = 13, Clip = 9, Degar = 5, Mroningstar = 8;
-int itemStats::Bow = 50, ThrowKnife = 20;
-int itemStats::HP_potion = 50, MP_potion = 30, GHP_potion = 75, gMP_potion = 45, Antidote, bandage;
+Item::Item() : Price(0)
+{
 
-// 아이템 가격
-int itemPrice::ShieldPrice, ArmorPrice, HelmetPrice, BootsPrice, RobePrice;
-int itemPrice::GreateAxePrice, AxePrice, LongswordPrice, SwordPrice, SpearPrice, ClipPrice, DegarPrice, MroningstarPrice;
-int itemPrice::BowPrice, ThrowKnifePrice;
-int itemPrice::HP_potionPrice, MPtionPice, GHP_potionPrice, GMP_ptionPrice, AntidotePrice, BandagePrice;
+};
+Item::~Item()
+{
+
+};
+int Item::getPrice() {};
+void Item::setPrice(int p) {};
+
+Weapon::Weapon() :Damage(0)
+{
+
+};
+Weapon::~Weapon()
+{
+
+};
+
+int Weapon::getDamage() {};
+void Weapon::setDamage(int w) {};
+
+Armor::Armor() : Defence(0)
+{
+
+};
+Armor::~Armor()
+{
+
+};
+
+int Armor::getDefence() {};
+void Armor::setDefence(int d) {};
+
+Expendables::Expendables() : Revocery(0)
+{
+
+};
+Expendables::~Expendables()
+{
+
+};
+
+int Expendables::getRevocery() {};
+void Expendables::setRevocery(int r) {};
+
+Shield::Shield() {};
+Shield::~Shield() {};
+
+armor::armor() {};
+armor::~armor() {};
+
+Helmet::Helmet() {};
+Helmet::~Helmet() {};
+
+Boots::Boots() {};
+Boots::~Boots() {};
+
+Robe::Robe() {};
+Robe::~Robe() {};
+
+GreateAxe::GreateAxe() {};
+GreateAxe::~GreateAxe() {};
+
+Axe::Axe() {};
+Axe::~Axe() {};
+
+Longsword::Longsword() {};
+Longsword::~Longsword() {};
+
+Sword::Sword() {};
+Sword::~Sword() {};
+
+Spear::Spear() {};
+Spear::~Spear() {};
+
+Clip::Clip() {};
+Clip::~Clip() {};
+
+HP_potion::HP_potion() {};
+HP_potion::~HP_potion() {};
+
+MP_potion::MP_potion() {};
+MP_potion::~MP_potion() {};
+
+GHP_potion::GHP_potion() {};
+GHP_potion::~GHP_potion() {};
+
+GMP_ption::GMP_ption() {};
+GMP_ption::~GMP_ption() {};
+
+Antidote::Antidote() {};
+Antidote::~Antidote() {};
+
+Bandage::Bandage() {};
+Bandage::~Bandage() {};
