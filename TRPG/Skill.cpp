@@ -1,27 +1,27 @@
-#include "Skill.h"
 #include <iostream>
+#include "Skill.h"
+#include "Player.h"
+
 using namespace std;
 
-class Skill
+void warriorSkill()
 {
-	void warriorSkill(int bash)
-	{
-		int bashDamage = 50;
-		//bash = _bashDamage + (warriorAD / 3);
-	}
-	void wizardSKill(int magicMissle)
-	{
-		int magicMissleDamage = 30;
-		//magicMissle = magicMissleDamage + (wizardAP / 7);
-	}
-	void pristSkill(int holyStrike)
-	{
-		int holyStrikeDamage = 20;
-		//holyStrike = holyStrikeDamage + (pristAP / 3 + (pristAD / 5));
-	}
-	void vagabondSKill(int slash)
-	{
-		int _slashDamage = 100;
-		//slash = slashDamage + (vagabondAD/70);
-	}
-};
+	int bashDamage = 50;
+	double bash = bashDamage + (playerAD / 3);
+	
+}
+void wizardSKill()
+{
+	int magicMissleDamage = 30;
+	double magicMissle = magicMissleDamage + (playerAP / 7);
+}
+void pristSkill()
+{
+	int holyStrikeDamage = 20;
+	double holyStrike = holyStrikeDamage + (playerAP / 3 + (playerAD / 5));
+}
+void vagabondSKill()
+{
+	int slashDamage = 100;
+	double slash = slashDamage + (playerAD/70);
+}

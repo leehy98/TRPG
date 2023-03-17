@@ -15,7 +15,7 @@
 //
 //위에서 작성한 Shop 클래스의 경우 Item 클래스의 객체들을 동적으로 생성하고 삭제할 가능성이 있기 때문에 포인터를 사용하는 것이 좋습니다.만약 객체들이 정적으로 생성된다면 참조를 사용하는 것도 좋은 선택일 수 있습니다.
 
-class shop 
+class shop
 {
 public:
 	std::string iname;
@@ -25,10 +25,10 @@ public:
 	int ShopMain();
 
 protected:
-	vector<shop>Weapon();
-	vector<shop>Armor();
-	vector<shop>RangeWeapon();
-	vector<shop>Expendables();
+	std::vector<shop>Weapon();
+	std::vector<shop>Armor();
+	std::vector<shop>RangeWeapon();
+	std::vector<shop>Expendables();
 };
 
 class Buy_Item : public shop

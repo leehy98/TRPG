@@ -36,7 +36,7 @@
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일\Player</Filter>
     </ClCompile>
-    <ClCompile Include="MainMenu.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>소스 파일\MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="goblin.cpp">
@@ -60,13 +60,10 @@
     <ClCompile Include="Skill.cpp">
       <Filter>소스 파일\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Status.cpp">
-      <Filter>소스 파일\Player</Filter>
-    </ClCompile>
     <ClCompile Include="MonsterValue.cpp">
       <Filter>소스 파일\Monster</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="battle.cpp">
       <Filter>소스 파일\MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="item.cpp">
@@ -101,13 +98,10 @@
     <ClInclude Include="Skill.h">
       <Filter>헤더 파일\player</Filter>
     </ClInclude>
-    <ClInclude Include="Status.h">
-      <Filter>헤더 파일\player</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
+    <ClInclude Include="battle.h">
       <Filter>헤더 파일\main</Filter>
     </ClInclude>
-    <ClInclude Include="MainMenu.h">
+    <ClInclude Include="main.h">
       <Filter>헤더 파일\main</Filter>
     </ClInclude>
     <ClInclude Include="item.h">

@@ -1,6 +1,4 @@
 #include "Player.h"
-#include "Status.h"
-#include "Status.cpp"
 #include<iostream>
 #include<string>
 

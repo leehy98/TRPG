@@ -1,51 +1,73 @@
 #include "item.h"
 
+// Item
 Item::Item() : Price(0)
 {
-
+	Price = 0;
 };
 Item::~Item()
 {
-
+	
 };
-int Item::getPrice() {};
-void Item::setPrice(int p) {};
-
-Weapon::Weapon() :Damage(0)
+int Item::getPrice() 
+{
+	return Price;
+};
+void Item::setPrice(int p) 
 {
 
+};
+
+// Weapon
+Weapon::Weapon() :Damage(0)
+{
+	Damage = 0;
 };
 Weapon::~Weapon()
 {
 
 };
-
-int Weapon::getDamage() {};
+int Weapon::getDamage() 
+{
+	return Damage;
+};
 void Weapon::setDamage(int w) {};
 
+
+// Armor
 Armor::Armor() : Defence(0)
 {
-
+	Defence = 0;
 };
 Armor::~Armor()
 {
 
 };
-
-int Armor::getDefence() {};
+int Armor::getDefence() 
+{
+	return Defence;
+};
 void Armor::setDefence(int d) {};
 
-Expendables::Expendables() : Revocery(0)
-{
 
+// Expendables
+Expendables::Expendables() : Recovery(0)
+{
+	Recovery = 0;
 };
 Expendables::~Expendables()
 {
 
 };
+int Expendables::getRecovery() 
+{
+	return Recovery;
+};
+void Expendables::setRecovery(int r) 
+{
 
-int Expendables::getRevocery() {};
-void Expendables::setRevocery(int r) {};
+
+};
 
 Shield::Shield() {};
 Shield::~Shield() {};

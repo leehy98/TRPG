@@ -29,10 +29,10 @@ class Expendables : public Item
 public:
 	Expendables();
 	~Expendables();
-	int getRevocery();
-	void setRevocery(int r);
+	int getRecovery();
+	void setRecovery(int r);
 protected:
-	int Revocery;
+	int Recovery;
 };
 
 class Armor : public Item
