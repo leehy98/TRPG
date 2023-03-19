@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
-#include "main.h"
 #include "Player.h"
 #include "Skill.h"
 #include "MonsterValue.h"
@@ -20,16 +19,14 @@ int stickyGel = 0;
 int goblinEar = 0;
 int lizardManTooth = 0;
 
-int battleSystem()
+int battleSystem(int battle)
 {
-
-
 	//플레이어와 몬스터의 행동 변수 
 	int playerSelect = 0, monsterSelect = 0;
 
 	int choiceClass = 0;
 
-	cout << "choose your Class." << endl;
+	cout << "choicee your Class." << endl;
 	cout << "Hidden selection when entering a specific number" << endl;
 	cout << "1. warrior" << endl;
 	cout << "2. wizard" << endl;
@@ -122,7 +119,7 @@ int battleSystem()
 		}
 		if (playerSelect == 3)
 		{
-			
+
 		}
 		if (playerSelect == 4)
 		{
@@ -173,12 +170,3 @@ int battleSystem()
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
-

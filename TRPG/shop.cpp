@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include "shop.h"
-#include "mainmenu.h"
 #include "inven.h"
 #include "item.h"
 
@@ -12,7 +11,6 @@ int ArmorSize = 5;
 int WeaponSize = 8;
 int RangeWeaponSize = 3;
 int ExpendablesSize = 6;
-
 
 // shop 생성자
 shop::shop(const std::string& name, int price) : iname(name), iprice(price)
@@ -48,9 +46,8 @@ vector<shop> shop::Expendables()
 	return ExpendablesList;
 }
 
-// shop 소멸자
 
-int shop::ShopMain()
+int shop::ShopMain(int s)
 {
 	cout << "welcome to the shop.decide what type of equipment to look at" << endl;
 	cout << "1. armor" << endl << "2. weapon" << endl << "3. range weapon" << endl << "4. expendables" << endl;
@@ -94,7 +91,7 @@ int shop::ShopMain()
 	}
 	try
 	{
-		if (equipmentchoice < 4)
+		if (equipmentchoice <= 5)
 		{
 			return 0;
 		}

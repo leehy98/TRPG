@@ -22,7 +22,8 @@ public:
 	int iprice;
 	shop(const std::string& name, int price);
 	~shop();
-	int ShopMain();
+	
+	int ShopMain(int s);
 
 protected:
 	std::vector<shop>Weapon();

@@ -12,7 +12,7 @@ extern int goblinEar;
 extern int lizardManTooth;
 extern int playerSelect, monsterSelect;
 
-int battleSystem();
+int battleSystem(int battle);
 
 #endif 
 
