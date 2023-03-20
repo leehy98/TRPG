@@ -15,7 +15,7 @@ int Item::getPrice()
 };
 void Item::setPrice(int p) 
 {
-
+	Price = 100;
 };
 
 // Weapon

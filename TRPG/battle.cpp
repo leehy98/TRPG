@@ -21,47 +21,54 @@ int lizardManTooth = 0;
 
 int battleSystem(int battle)
 {
+	system("cls");
 	//플레이어와 몬스터의 행동 변수 
 	int playerSelect = 0, monsterSelect = 0;
 
 	int choiceClass = 0;
 
-	cout << "choicee your Class." << endl;
+	cout << "choice your Class." << endl << endl;
 	cout << "Hidden selection when entering a specific number" << endl;
 	cout << "1. warrior" << endl;
 	cout << "2. wizard" << endl;
 	cout << "3. prist" << endl;
 	cin >> choiceClass;
-
+	system("cls");
 	if (choiceClass == 1)
 	{
 		Class = "warrior";
 		warrior(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		system("cls");
 		cout << "choose warrior." << endl << endl;
+
 	}
 	else if (choiceClass == 2)
 	{
 		Class = "wizard";
 		wizard(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		system("cls");
 		cout << "choose wizard." << endl << endl;
+
 	}
 	else if (choiceClass == 3)
 	{
 		Class = "prist";
 		prist(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		system("cls");
 		cout << "choose prist." << endl << endl;
+
 	}
 	// 히든
 	else if (choiceClass == 100)
 	{
 		Class = "vagabond";
 		vagabond(&playerHP, &playerMP, &playerAD, &playerAP, &playerDEF);
+		system("cls");
 		cout << "choose hidden CLASS, vagabond." << endl << endl;
-	}
 
+	}
 	int choiceMonster = 0;
 
-	system("cls");
 	cout << "Choose a monster to fight." << endl;
 	cout << "1. slime" << endl;
 	cout << "2. goblin" << endl;
@@ -98,7 +105,7 @@ int battleSystem(int battle)
 		cout << "1 . Attack" << endl;
 		cout << "2 . Defence" << endl;
 		//  cout << "3 . Skill" << endl;
-		//	cout << "4. run" << endl;
+		cout << "4. run" << endl;
 		cout << endl;
 		cin >> playerSelect;
 		monsterSelect = rand() % 2 + 1;

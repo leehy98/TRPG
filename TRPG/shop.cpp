@@ -13,31 +13,28 @@ int RangeWeaponSize = 3;
 int ExpendablesSize = 6;
 
 // shop 생성자
+shop::shop()
+{
+	iname = "item name";
+	iprice = 0;
+};
 shop::shop(const std::string& name, int price) : iname(name), iprice(price)
 {
 
 };
-shop::~shop()
-{
+// 소멸자
+shop::~shop() {};
 
-};
 vector<shop> shop::Weapon()
 {
 	std::vector<shop> weaponList = {};
 	return weaponList;
 }
 
-
 vector<shop>shop::Armor()
 {
 	vector<shop> ArmorList = {};
 	return ArmorList;
-}
-
-vector<shop>shop::RangeWeapon()
-{
-	vector<shop> RangeWeaponList = {};
-	return RangeWeaponList;
 }
 
 vector<shop> shop::Expendables()
@@ -46,10 +43,15 @@ vector<shop> shop::Expendables()
 	return ExpendablesList;
 }
 
-
 int shop::ShopMain(int s)
 {
-	cout << "welcome to the shop.decide what type of equipment to look at" << endl;
+	system("cls");
+	shop iShop;
+	vector<shop> weapons = iShop.Weapon();
+	vector<shop> Armor = iShop.Armor();
+	vector<shop> Expendables = iShop.Expendables();
+
+	cout << "welcome to the shop.decide what type of equipment to look at" << endl << endl;
 	cout << "1. armor" << endl << "2. weapon" << endl << "3. range weapon" << endl << "4. expendables" << endl;
 
 	int equipmentchoice = 0;
@@ -59,7 +61,7 @@ int shop::ShopMain(int s)
 	{
 		for (int i = 0; i < ArmorSize; i++)
 		{
-
+			cout << "hello world" << endl;
 
 		}
 	}
@@ -67,7 +69,7 @@ int shop::ShopMain(int s)
 	{
 		for (int i = 0; i < WeaponSize; i++)
 		{
-
+			cout << "hello world 2" << endl;
 
 		}
 
@@ -76,22 +78,14 @@ int shop::ShopMain(int s)
 	{
 		for (int i = 0; i < RangeWeaponSize; i++)
 		{
-
-
-		}
-
-	}
-	else if (equipmentchoice == 4)
-	{
-		for (int i = 0; i < ExpendablesSize; i++)
-		{
+			cout << "hello world 3" << endl;
 
 		}
 
 	}
 	try
 	{
-		if (equipmentchoice <= 5)
+		if (equipmentchoice <= 4)
 		{
 			return 0;
 		}

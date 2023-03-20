@@ -20,15 +20,15 @@ class shop
 public:
 	std::string iname;
 	int iprice;
+	shop();
 	shop(const std::string& name, int price);
 	~shop();
-	
+
 	int ShopMain(int s);
 
 protected:
 	std::vector<shop>Weapon();
 	std::vector<shop>Armor();
-	std::vector<shop>RangeWeapon();
 	std::vector<shop>Expendables();
 };
 

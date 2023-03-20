@@ -26,6 +26,7 @@ int main(int c)
 		shop myShop(name, price);
 		int shop = myShop.ShopMain(2);
 	}
+	
 	return 0;
 }
 
