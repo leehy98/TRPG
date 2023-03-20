@@ -26,7 +26,7 @@ shop::shop(const std::string& name, int price) : iname(name), iprice(price)
 shop::~shop() {};
 
 vector<shop> shop::Weapon()
-{
+{	
 	std::vector<shop> weaponList = {};
 	return weaponList;
 }
@@ -61,7 +61,7 @@ int shop::ShopMain(int s)
 	{
 		for (int i = 0; i < ArmorSize; i++)
 		{
-			cout << "hello world" << endl;
+			cout << "Armor" << endl;
 
 		}
 	}
@@ -69,16 +69,16 @@ int shop::ShopMain(int s)
 	{
 		for (int i = 0; i < WeaponSize; i++)
 		{
-			cout << "hello world 2" << endl;
+			cout << "Weapon" << endl;
 
 		}
 
 	}
 	else if (equipmentchoice == 3)
 	{
-		for (int i = 0; i < RangeWeaponSize; i++)
+		for (int i = 0; i < ExpendablesSize; i++)
 		{
-			cout << "hello world 3" << endl;
+			cout << "Expendables" << endl;
 
 		}
 
@@ -92,7 +92,7 @@ int shop::ShopMain(int s)
 	}
 	catch (int a)
 	{
-		cout << "your got the wrong number choose. choice the 1 ~ 4 number." << endl;
+		cout << "your got the wrong number choose. choice the 1 ~ 3 number." << endl;
 	}
 	return 0;
 }

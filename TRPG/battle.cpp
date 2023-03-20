@@ -104,7 +104,7 @@ int battleSystem(int battle)
 		cout << "playerHP : " << playerHP << "       " << monsterHP << " : monsterHP" << endl;
 		cout << "1 . Attack" << endl;
 		cout << "2 . Defence" << endl;
-		//  cout << "3 . Skill" << endl;
+		//  cout << "3 . Skill" << endl
 		cout << "4. run" << endl;
 		cout << endl;
 		cin >> playerSelect;
@@ -156,21 +156,24 @@ int battleSystem(int battle)
 		if (monsterHP < 1)
 		{
 			cout << "monster failed." << endl;
-			cout << "player win" << endl;
+			cout << "player win" << endl <<  endl;
+			cout << "gold : " << gold << endl;
 			if (monster == "slime")
 			{
 				slimeDropItem(&gold, &stickyGel);
+				cout << "stickyGel : " << stickyGel << endl;
 			}
 			if (monster == "goblin")
 			{
 				goblinDropItem(&gold, &goblinEar);
+				cout << "goblinEar : " << goblinEar << endl;
 			}
 			if (monster == "lizardMan")
 			{
 				lizardManDropItem(&gold, &lizardManTooth);
+				cout << "lizardManTooth : " << lizardManTooth << endl;
 			}
-			/*cout << "gold : " << gold << endl;
-			cout << "drop item : " << stickyGel << endl;*/
+			
 			break;
 		}
 
